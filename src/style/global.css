@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("./fonts/NetflixSans-Regular.woff2") format("woff2");
+}
+
+html,
+body {
+  font-family: "Netflix Sans", "HelveticaNeue-Light", "Helvetica Neue Light",
+    "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  overflow-x: hidden;
+  color: white;
+  background-color: #1b1b1b;
+}
+
+.custom-image {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/0678255b-ecfd-4775-999a-0680d539f07c/f3672704-1713-49fb-8c59-e6cea1f25fd7/ID-id-20221128-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.custom-shadow {
+  box-shadow: 0 0 15rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.bg-shadow {
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0,
+    transparent 60%,
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown:hover .dropdown-content{
+  display: flex;
+}
+
+.language:hover {
+  background: gray;
+}
