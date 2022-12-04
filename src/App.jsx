@@ -161,10 +161,18 @@ function App() {
         {/* Card Ends */}
       </main>
       <footer className="w-screen h-80 flex justify-center items-center bg-black">
-        <AiFillGithub className="text-8xl max-sm:text-5xl max-sm:m-2 m-12"/>
-        <AiOutlineLinkedin className="text-8xl max-sm:text-5xl max-sm:m-2 m-12"/>
-        <AiOutlineTwitter className="text-8xl max-sm:text-5xl max-sm:m-2 m-12"/>
-        <AiOutlineWhatsApp className="text-8xl max-sm:text-5xl max-sm:m-2 m-12"/>
+        <a href="https://github.com/Haris-mlna">
+          <AiFillGithub className="text-8xl max-sm:text-5xl max-sm:m-2 m-12 cursor-pointer" />
+        </a>
+        <a href="https://www.linkedin.com/in/haris-maulana-57b06696/">
+          <AiOutlineLinkedin className="text-8xl max-sm:text-5xl max-sm:m-2 m-12 cursor-pointer"/>
+        </a>
+        <a href="https://twitter.com/harismaulana000">
+          <AiOutlineTwitter className="text-8xl max-sm:text-5xl max-sm:m-2 m-12 cursor-pointer"/>
+        </a>
+        <a href="whatsapp:contact=+6281386329291">
+          <AiOutlineWhatsApp className="text-8xl max-sm:text-5xl max-sm:m-2 m-12 cursor-pointer"/>
+        </a>
       </footer>
     </div>
   );
