@@ -2,6 +2,7 @@ import "./style/global.css";
 import { TbWorld } from "react-icons/tb";
 import { AiFillCaretDown, AiOutlineWhatsApp, AiOutlineLinkedin, AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { useState } from "react";
+import {Link} from 'react-router-dom';
 
 import tv from "./assets/images/tv.png";
 
@@ -65,9 +66,11 @@ function App() {
                 </a>
               </div>
             </div>
-            <button className="flex py-1 px-4 mx-12 max-sm:mx-0 rounded bg-[#E50914] cursor-pointer">
-              Log in
-            </button>
+            <Link to='/login'>
+              <button className="flex py-1 px-4 mx-12 max-sm:mx-0 rounded bg-[#E50914] hover:bg-[#b30811] cursor-pointer">
+                Log in
+              </button>
+            </Link>
           </div>
         </nav>
         {/* Navigation Bar Ends */}
